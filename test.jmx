@@ -91,7 +91,7 @@
         <hashTree/>
         <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
           <collectionProp name="Asserion.test_strings">
-            <stringProp name="911494106">200|302|301|404|304</stringProp>
+            <stringProp name="-175887330">200|302|301|304</stringProp>
           </collectionProp>
           <stringProp name="Assertion.custom_message"></stringProp>
           <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -105,14 +105,14 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="log" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">username${userNumber}</stringProp>
+                <stringProp name="Argument.value">your_wp_username</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">log</stringProp>
               </elementProp>
               <elementProp name="pwd" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">PassForTest2021</stringProp>
+                <stringProp name="Argument.value">your_wp_password</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">pwd</stringProp>
@@ -147,15 +147,6 @@
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random User" enabled="true">
-          <stringProp name="variableName">userNumber</stringProp>
-          <stringProp name="outputFormat"></stringProp>
-          <stringProp name="minimumValue">1</stringProp>
-          <stringProp name="maximumValue">10</stringProp>
-          <stringProp name="randomSeed">1</stringProp>
-          <boolProp name="perThread">false</boolProp>
-        </RandomVariableConfig>
-        <hashTree/>
       </hashTree>
       <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Random Timer" enabled="true">
         <stringProp name="ConstantTimer.delay">${random_timer}</stringProp>
